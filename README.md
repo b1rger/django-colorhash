@@ -1,3 +1,3 @@
 # django-colorhash
 
-Provide a Django templatetag to generate colorhash values from strings
+Provide a [Django](https://www.djangoproject.com/) templatetag to generate [colorhash](https://github.com/dimostenis/color-hash-python) values from strings
