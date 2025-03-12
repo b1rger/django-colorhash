@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2025 Birger Schacht <birger@rantanplan.org>
+# SPDX-License-Identifier: MIT
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: Run release-please
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v3
+        with:
+          release-type: python
+          package-name: django-colorhash
+          bump-minor-pre-major: true
